@@ -17,6 +17,13 @@ body, p, blockquote, h1, h2, h3, h4, h5, h6, ul, ol, dl, li, dt, dd, form, field
 .mediabox1-01 .mediabox1-01_img-holder {
   text-align: center; }
 
+.mediabox1-01 .mediabox1-01_img-holder > img {
+  display: block;
+  width: 100%;
+  /* optional */
+  max-width: 100%;
+  height: auto; }
+
 body, p, blockquote, h1, h2, h3, h4, h5, h6, ul, ol, dl, li, dt, dd, form, fieldset, legend, input, textarea, select {
   margin: 0;
   padding: 0; }
@@ -755,8 +762,6 @@ h1 {
 
 .mediabox1-01 .mediabox1-01_img-holder {
   border: 1px solid #000; }
-  .mediabox1-01 .mediabox1-01_img-holder > img {
-    max-width: 280px; }
 
 .mediabox1-01 .mediabox1-01_media-right h3 {
   background-color: #ccc; }
