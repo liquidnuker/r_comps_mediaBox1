@@ -48,5 +48,36 @@ h1 {
 
 @include mediabox1-01;
 
-// 
+// mediabox1-02       
 // ==================================================/
+@mixin mediabox1-02 {
+  .mediabox1-02 {
+    margin-bottom: 6px;
+    display: inline-block;
+
+    .mediabox1-02_img-holder {
+      @extend %text--center;
+
+      > img {
+        @extend %img--responsive;
+      }
+    }
+
+    .mediabox1-02_media-right {
+      padding-left: 6px;
+      
+      > button {
+        margin-top: 6px;
+      }
+    }
+
+    .mediabox1-02_extras {
+        button {
+          float: right;
+          margin-right: 6px;
+      }
+    }
+  }  
+}
+
+@include mediabox1-02;
