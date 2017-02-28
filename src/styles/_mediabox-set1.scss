@@ -16,24 +16,26 @@ h1 {
 // ==================================================/
 @mixin mediabox1-01 {
   .mediabox1-01 {
-    margin-bottom: 6px;
-    display: inline-block;
-
     .mediabox1-01_img-holder {
       @extend %text--center;
       @extend %padd--4;
       border: 1px solid #000;
-      
+
       > img {
         max-width: 280px;
       }
     }
 
     .mediabox1-01_media-right {
-      padding-left: 6px;
+      @extend %padd--4;
+
+      h3 {
+        background-color: #ccc;
+      }
     }
 
     .mediabox1-01_extras {
+      background-color: #666;
       button {
         margin-top: 6px;
         float: right;
