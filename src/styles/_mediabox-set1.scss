@@ -41,6 +41,7 @@ h1 {
 
       button {
         float: right;
+        margin-right: 6px;
       }
     }
   }
@@ -52,9 +53,7 @@ h1 {
 // ==================================================/
 @mixin mediabox1-02 {
   .mediabox1-02 {
-    margin-bottom: 6px;
-    display: inline-block;
-
+    // @extend %bg--secondary;
     .mediabox1-02_img-holder {
       @extend %text--center;
 
@@ -64,17 +63,24 @@ h1 {
     }
 
     .mediabox1-02_media-right {
-      padding-left: 6px;
-      
+      @extend %padd--4;
+
       > button {
         margin-top: 6px;
       }
     }
 
     .mediabox1-02_extras {
-        button {
-          float: right;
-          margin-right: 6px;
+      background-color: #666;
+      @extend %padd--4;
+
+      p {
+        display: inline-block;
+      }
+
+      button {
+        float: right;
+        margin-right: 6px;
       }
     }
   }  
