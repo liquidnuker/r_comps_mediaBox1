@@ -15,7 +15,32 @@ h1 {
 // mediabox1-01
 // ==================================================/
 @mixin mediabox1-01 {
+  .mediabox1-01 {
+    margin-bottom: 6px;
+    display: inline-block;
 
+    .mediabox1-01_img-holder {
+      @extend %text--center;
+      @extend %padd--4;
+      border: 1px solid #000;
+      
+      > img {
+        max-width: 280px;
+      }
+    }
+
+    .mediabox1-01_media-right {
+      padding-left: 6px;
+    }
+
+    .mediabox1-01_extras {
+      button {
+        margin-top: 6px;
+        float: right;
+        margin-right: 6px;
+      }
+    }
+  }
 }
 
 @include mediabox1-01;
