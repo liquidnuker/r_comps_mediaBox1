@@ -14,10 +14,10 @@ body, p, blockquote, h1, h2, h3, h4, h5, h6, ul, ol, dl, li, dt, dd, form, field
 .mediabox1-01 .mediabox1-01_img-holder, .mediabox1-01 .mediabox1-01_media-right, .mediabox1-01 .mediabox1-01_extras {
   padding: 4px; }
 
-.mediabox1-01 .mediabox1-01_img-holder {
+.mediabox1-01 .mediabox1-01_img-holder, .mediabox1-02 .mediabox1-02_img-holder {
   text-align: center; }
 
-.mediabox1-01 .mediabox1-01_img-holder > img {
+.mediabox1-01 .mediabox1-01_img-holder > img, .mediabox1-02 .mediabox1-02_img-holder > img {
   display: block;
   width: 100%;
   /* optional */
@@ -771,6 +771,17 @@ h1 {
   margin-top: 4px; }
   .mediabox1-01 .mediabox1-01_extras button {
     float: right; }
+
+.mediabox1-02 {
+  margin-bottom: 6px;
+  display: inline-block; }
+  .mediabox1-02 .mediabox1-02_media-right {
+    padding-left: 6px; }
+    .mediabox1-02 .mediabox1-02_media-right > button {
+      margin-top: 6px; }
+  .mediabox1-02 .mediabox1-02_extras button {
+    float: right;
+    margin-right: 6px; }
 
 body:before {
   background-color: #FCF8E3;
