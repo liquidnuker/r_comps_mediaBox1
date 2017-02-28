@@ -35,11 +35,12 @@ h1 {
     }
 
     .mediabox1-01_extras {
+      @extend %padd--4;
       background-color: #666;
+      margin-top: 4px;
+
       button {
-        margin-top: 6px;
         float: right;
-        margin-right: 6px;
       }
     }
   }
