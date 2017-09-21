@@ -6,7 +6,7 @@
   .row:after {
     clear: both; }
 
-.btn {
+.btn, .mediabox101 .mediabox101_btn_svg, .mediabox102 .mediabox102_extras p, .mediabox102 .mediabox102_btn_svg {
   display: inline-block; }
 
 input, textarea, select, html, body, div, span, applet, object, iframe,
@@ -521,7 +521,8 @@ input [type="button"],
   cursor: pointer; }
 
 .btn1-01 {
-  border: 1px solid #000; }
+  border: 1px solid #000;
+  background-color: #ccc; }
 
 .container-fluid {
   padding-left: 0;
@@ -817,12 +818,21 @@ input [type="button"],
       color: #fff; }
   .mediabox101 .mediabox101_extras {
     background-color: #2c2d32; }
+    .mediabox101 .mediabox101_extras span {
+      color: #000; }
 
 .mediabox101 .mediabox101_extras {
   margin-top: 4px; }
-  .mediabox101 .mediabox101_extras button {
+  .mediabox101 .mediabox101_extras span {
     float: right;
     margin-left: 4px; }
+    .mediabox101 .mediabox101_extras span:hover > .mediabox101_btn_svg {
+      fill: #fff; }
+
+.mediabox101 .mediabox101_btn_svg {
+  width: 18px;
+  height: 18px;
+  vertical-align: middle; }
 
 .mediabox102 {
   background-color: #141416;
@@ -832,16 +842,22 @@ input [type="button"],
     color: #fff; }
   .mediabox102 .mediabox102_extras {
     background-color: #2c2d32; }
+  .mediabox102 span {
+    color: #000; }
+    .mediabox102 span:hover > .mediabox102_btn_svg {
+      fill: #fff; }
 
-.mediabox102 .mediabox102_media-right > button {
+.mediabox102 .mediabox102_media-right span {
   margin-top: 6px; }
 
-.mediabox102 .mediabox102_extras p {
-  display: inline-block; }
-
-.mediabox102 .mediabox102_extras button {
+.mediabox102 .mediabox102_extras span {
   float: right;
   margin-right: 6px; }
+
+.mediabox102 .mediabox102_btn_svg {
+  width: 18px;
+  height: 18px;
+  vertical-align: middle; }
 
 [class|="col"] {
   position: relative;
