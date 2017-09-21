@@ -22,7 +22,8 @@ input [type="button"],
   @extend %btn_font--sans-serif;
   @extend %display--inline-block;
   font-size: 100%; 
-  line-height: 1.15;  
+  line-height: 1.15;
+  cursor: pointer;  
 }
 
 // themes
