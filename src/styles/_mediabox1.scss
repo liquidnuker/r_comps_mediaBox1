@@ -11,10 +11,11 @@
 
     .mediabox101_media-right {
       background-color: #1c1d22;
-      h3 {
-        background-color: #343437;
-        color: #fff;
-      }
+    }
+
+    .mediabox101_heading {
+      background-color: #343437;
+      color: #fff;
     }
 
     .mediabox101_extras {
@@ -38,12 +39,12 @@
     }
   }
 
+  .mediabox101_heading {
+    @extend %padd--4;
+  }
+
   .mediabox101_media-right {
     @extend %padd--4;
-
-    h3 {
-      @extend %padd--4;
-    }
 
     p {
       @extend %padd--4;
@@ -72,6 +73,21 @@
   }
 }
 
+// *mobile landscape (480x320)
+@include mq($from: mobileLandscape) {
+  .mediabox101 {
+    .mediabox101_media-left {
+      width: 30%;
+      float: left;
+    }
+
+    .mediabox101_media-right {
+      width: 70%;
+      float: left;
+    }
+  }
+}
+
 // mediabox102       
 // ==================================================/
 @mixin mediabox102_theme() {
@@ -79,11 +95,9 @@
     background-color: #141416;
     color: #d5d5d5;
 
-    .mediabox102_media-right {
-      h3 {
-        background-color: #343437;
-        color: #fff; 
-      }
+    .mediabox102_heading {
+      background-color: #343437;
+      color: #fff; 
     }
 
     .mediabox102_extras {
@@ -110,12 +124,12 @@
     }
   }
 
+  .mediabox102_heading {
+    @extend %padd--4;
+  }
+
   .mediabox102_media-right {
     @extend %padd--4;
-
-    h3 {
-      @extend %padd--4;
-    }
 
     p {
       @extend %padd--4;
@@ -146,3 +160,18 @@
     vertical-align: middle;
   }
 }  
+
+// *mobile landscape (480x320)
+@include mq($from: mobileLandscape) {
+  .mediabox102 {
+    .mediabox102_media-left {
+      width: 30%;
+      float: left;
+    }
+
+    .mediabox102_media-right {
+      width: 70%;
+      float: left;
+    }
+  }
+}
