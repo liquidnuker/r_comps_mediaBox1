@@ -29,6 +29,22 @@
 }
 @include mediabox101_theme();
 
+// *mobile landscape (480x320)
+@include mq($from: mobileLandscape) {
+  .mediabox101 {
+    .mediabox101_media-left {
+      width: 30%;
+      float: left;
+    }
+
+    .mediabox101_media-right {
+      width: 70%;
+      float: left;
+    }
+  }
+}
+// end breakpoints
+
 .mediabox101 {
   .mediabox101_img-holder {
     @extend %text--center;
@@ -73,21 +89,6 @@
   }
 }
 
-// *mobile landscape (480x320)
-@include mq($from: mobileLandscape) {
-  .mediabox101 {
-    .mediabox101_media-left {
-      width: 30%;
-      float: left;
-    }
-
-    .mediabox101_media-right {
-      width: 70%;
-      float: left;
-    }
-  }
-}
-
 // mediabox102       
 // ==================================================/
 @mixin mediabox102_theme() {
@@ -114,6 +115,22 @@
   }
 }
 @include mediabox102_theme();
+
+// *mobile landscape (480x320)
+@include mq($from: mobileLandscape) {
+  .mediabox102 {
+    .mediabox102_media-left {
+      width: 30%;
+      float: left;
+    }
+
+    .mediabox102_media-right {
+      width: 70%;
+      float: left;
+    }
+  }
+}
+// end breakpoints
 
 .mediabox102 {
   .mediabox102_img-holder {
@@ -159,19 +176,4 @@
     height: 18px;
     vertical-align: middle;
   }
-}  
-
-// *mobile landscape (480x320)
-@include mq($from: mobileLandscape) {
-  .mediabox102 {
-    .mediabox102_media-left {
-      width: 30%;
-      float: left;
-    }
-
-    .mediabox102_media-right {
-      width: 70%;
-      float: left;
-    }
-  }
-}
+} 
